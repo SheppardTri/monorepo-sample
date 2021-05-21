@@ -13,6 +13,10 @@
   "files": [
     "lib"
   ],
+  "dependencies": {
+    "cross-env": "5.0.5",
+    "@sheppardtri/aloha-world": "0.0.4-alpha.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SheppardTri/lerna-test.git"

@@ -4,6 +4,18 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    ":build ---": "---------------",
+    "build": "run-s build:core build:docs",
+    "prepublish": "yarn build",
+    "publish": "lerna publish patch --yes",
+    "prepublish:test": "yarn build",
+    "publish:test": "lerna publish --canary --preid beta --yes",
+    ":dev ---": "---------------",
+    "start": "run-p start:core start:docs",
+    "serve": "serve docs",
+    ":core  ---": "---------------"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }

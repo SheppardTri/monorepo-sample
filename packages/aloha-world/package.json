@@ -1,0 +1,27 @@
+{
+  "name": "@sheppardtri/aloha-world",
+  "version": "0.0.4-alpha.0",
+  "description": "> TODO: description",
+  "author": "Travis <Sheppardtri@gmail.com>",
+  "homepage": "https://github.com/SheppardTri/lerna-test#readme",
+  "license": "ISC",
+  "main": "lib/aloha-world.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheppardTri/lerna-test.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/SheppardTri/lerna-test/issues"
+  },
+  "gitHead": "d85e303fb4398a9f8a80c1e7d18c732694c54a66"
+}

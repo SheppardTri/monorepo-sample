@@ -13,10 +13,6 @@
   "files": [
     "lib"
   ],
-  "dependencies": {
-    "cross-env": "5.0.5",
-    "@sheppardtri/aloha-world": "0.0.4-alpha.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SheppardTri/lerna-test.git"
@@ -27,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/SheppardTri/lerna-test/issues"
   },
-  "gitHead": "d85e303fb4398a9f8a80c1e7d18c732694c54a66"
+  "gitHead": "d85e303fb4398a9f8a80c1e7d18c732694c54a66",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }

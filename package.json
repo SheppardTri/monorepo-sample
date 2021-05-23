@@ -1,22 +1,31 @@
 {
-  "name": "root",
+  "name": "@sheppardtri/root",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     ":build ---": "---------------",
-    "build": "run-s build:core build:docs",
+    "build": "run-s build:aloha-world build:hello-world",
     "prepublish": "yarn build",
     "publish": "lerna publish patch --yes",
     "prepublish:test": "yarn build",
     "publish:test": "lerna publish --canary --preid beta --yes",
     ":dev ---": "---------------",
-    "start": "run-p start:core start:docs",
+    "start": "run-p start:aloha-world start:hello-world",
     "serve": "serve docs",
-    ":core  ---": "---------------"
+    ":core  ---": "---------------",
+    "build:core": "yarn workspace @sheppardtri/aloha-world run build",
+    "start:core": "yarn workspace @sheppardtri/aloha-world run start",
+    "watch:core": "yarn workspace @sheppardtri/aloha-world run watch",
+    ":docs  ---": "---------------",
+    "build:docs": "yarn workspace @sheppardtri/hello-world run build",
+    "watch:docs": "yarn workspace @sheppardtri/hello-world run watch",
+    "start:docs": "yarn workspace @sheppardtri/hello-world run start",
+    "start:docs:ws": "yarn workspace @sheppardtri/hello-world run start:ws"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
-  }
+  },
+  "version": "0.0.0"
 }
